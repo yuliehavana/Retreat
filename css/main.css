@@ -118,6 +118,7 @@ textarea {
     font: size 1.125em;
     margin: 20px 0;
     font-family: 'Poppings', sans-serif;  
+    font-weight: 500;
   }
    
   p {
@@ -157,15 +158,15 @@ header .content-wrapper {
   align-items: center;
   flex-flow: row wrap;
   margin:0;
-
-
 }
+
 
 .header-divider {
 
   width:100%;
   height:1px;
   margin: 10px 0 20px 0;
+  background: #3a3a3a; 
 }
 
 header nav {
@@ -174,19 +175,34 @@ header nav {
   align-items: center;
   flex-flow:row wrap;
   width: 60%;
+  color:#e2e3ed;
+  font-size:1.125em;
+  font-weight:700;
+
 }
 
 header nav ul {
   display:flex;
-  justify-content: center;
+  justify-content: space-around; 
   align-items: center;
   width:100%
+}
+
+header nav ul li {
+  font-size:1.125em;
 }
 
 /******** Footer ******/
 footer {
   flex-direction:column;
+  text-align:center;
+
 }
+
+footer p {
+  margin:0;
+}
+
 footer .content-wrapper {
  width: 55%;
  margin: 50px 0;
@@ -213,13 +229,57 @@ footer .copyright {
   justify-content: center;
   align-items: center;
 }
+
+.hero-area h1 {
+  font-size:2.25em;
+  font-family: font-family: 'Lobster', cursive;
+  font-weight:500;
+  line-height:1.2
+}
+
 /*Aside*/
-aside{
+aside {
   display:flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color:#527158
 }
+aside.form{
+  margin-top:30px;
+}
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+}
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.form-description h3{
+  color:#e2e3ed;
+  font-size:30px;
+}
+
+.form-description p{
+  color:#bac2c4;
+  font-size:18px;
+  line-height:24px;
+}
+
 /*Features*/
 .features{
   display:flex;
@@ -244,6 +304,7 @@ aside{
 }
 .features p {
   margin:0;
+  text-align:center;
 }
 
 /*----------------------Reviews ----------------------------------*/
@@ -252,25 +313,28 @@ aside{
   display:flex;
   justify-content: center;
   flex-flow: row wrap;
+  background-color:  #2a423a;
 }
 
 .reviews h2 {
   margin-bottom: 40px;
+  margin:20px 0;
 }
+
 
 .reviews h3 {
   width:55%;
   margin: 20px 0;
 }
+
 /*---------------------------- About Page ----------------------*/
-
-
 
 .mission {
   display:flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #527158;
 }
 
 .contact-section{
@@ -278,6 +342,8 @@ aside{
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color:#2a423a;
+
 }
 
 .contact-content p{
@@ -290,6 +356,7 @@ margin:0;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color:#527158;
 }
 
 
@@ -301,6 +368,17 @@ margin:0;
   margin: 50px 0 0 0;
 }
 
+.faq h2{
+  margin-bottom: 40px;
+  line-height:1;
+}
+.faq content{
+  margin-bottom: 50px;
+}
+
+.faq content h4{
+  line-height: 1.333;
+}
 
 /* ==========================================================================
    Helper classes
@@ -383,6 +461,8 @@ margin:0;
 .clearfix::after {
   clear: both;
 }
+
+
 
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
