@@ -94,6 +94,7 @@ textarea {
     font-family: 'Open Sans', sans-seriff;
     font-size:1em;
     text-align:left;
+    color:#e2e3ed;
   }
   
    
@@ -110,12 +111,13 @@ textarea {
   h2 {
     font-family:'Poppings', sans-serif;
     font: size 1.875em;
+    font-weight:500;
   }
 
    
   h3, 
   h4 {
-    font: size 1.125em;
+    font-size: 1.125em;
     margin: 20px 0;
     font-family: 'Poppings', sans-serif;  
     font-weight: 500;
@@ -126,7 +128,6 @@ textarea {
     line-height: 1.285;
   }
 
-   
   address {
   font-style:normal;
   }
@@ -143,13 +144,14 @@ footer {
   justify-content: center;
   align-items: center;
   flex-flow:row wrap;
+  background-color: #202322;
 }
 
 /** Header Styles ****/
 header {
   padding: 15px 0;
- 
 }
+
 
 header .content-wrapper {
   display:flex;
@@ -158,15 +160,21 @@ header .content-wrapper {
   flex-flow: row wrap;
   margin:0;
 }
-
+header figure{
+  width:60%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
 
 .header-divider {
-
   width:100%;
   height:1px;
-  margin: 10px 0 20px 0;
+  width:100%;
   background: #3a3a3a; 
 }
+
 
 header nav {
   display:flex;
@@ -174,7 +182,6 @@ header nav {
   align-items: center;
   flex-flow:row wrap;
   width: 60%;
-  color:#e2e3ed;
   font-size:1.125em;
   font-weight:700;
 
@@ -183,7 +190,6 @@ header nav {
 header nav ul {
   display:flex;
   justify-content: space-around; 
-  align-items: center;
   width:100%
 }
 
@@ -193,9 +199,8 @@ header nav ul li {
 
 /******** Footer ******/
 footer {
-  flex-direction:column;
-  text-align:center;
-
+  text-align: center;
+  flex-direction: column;
 }
 
 footer p {
@@ -223,18 +228,24 @@ footer .copyright {
 
 /**** Mobile Styles- Homepage *****/
 /*--------- Hero Area ---------*/
+
 .hero-area {
-  display:flex;
-  justify-content: center;
-  align-items: center;
+ background: url('../img/bridge-woman.jpg');
+ background-size: cover;
+ background-position: center;
+ min-height: 500px;
+ display: flex;
+ justify-content: center;
+ flex-flow: row wrap;
 }
 
 .hero-area h1 {
   font-size:2.25em;
-  font-family: font-family: 'Lobster', cursive;
+  font-family: 'Lobster', cursive;
   font-weight:500;
   line-height:1.2;
 }
+
 
 /*Aside*/
 aside {
@@ -242,7 +253,10 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  background-color:#527158
+  background-color:#527158;
+}
+aside h3{
+  font-family:'Lobster', cursive;
 }
 aside.form{
   margin-top:30px;
@@ -253,6 +267,7 @@ input[type=text] {
   color: #2a423a;
   font-style: italic;
   padding: 1em;
+  
 }
 input[type=button] {
   width: 100%;
@@ -268,22 +283,15 @@ input[type=button] {
   text-transform: uppercase;
 }
 
-.form-description h3{
-  color:#e2e3ed;
-  font-size:30px;
-}
-
-.form-description p{
-  color:#bac2c4;
-  font-size:18px;
-  line-height:24px;
-}
 
 /*Features*/
 .features{
   display:flex;
   justify-content: center;
   flex-flow: row wrap;
+  background-image:url('../img/unplugges-group.jpg');
+  background-size:cover;
+  background-position: center;
 }
 .features h2 {
   margin-bottom:60px;
@@ -292,7 +300,6 @@ input[type=button] {
   width:63%;
   margin: 30px 0;
 }
-
 
  .features .features-items {
   display:flex;
@@ -317,7 +324,7 @@ input[type=button] {
 
 .reviews h2 {
   margin-bottom: 40px;
-  margin:20px 0;
+  line-height:1;
 }
 
 
