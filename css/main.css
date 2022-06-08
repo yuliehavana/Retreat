@@ -137,6 +137,11 @@ textarea {
      margin: 50px 0;
    }
 
+.features i {
+	font-size: 3.75em;
+        margin-bottom: 40px;
+}
+
 /*------- Base Header- Footer styles ----*/
 header,
 footer {
